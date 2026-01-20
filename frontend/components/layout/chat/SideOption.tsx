@@ -94,7 +94,7 @@ const SideOption = React.memo(() => {
     );
 
   return (
-    <div className="h-[calc(100vh-5rem)] w-64 shadow-2xl absolute left-0 top-[5rem]">
+    <div className={`h-[calc(100vh-5rem)] w-64 shadow-2xl absolute left-0 top-[5rem] ${ document.documentElement.getAttribute('data-theme') === 'dark' ? 'bg-black': ''}`}>
       <ToggleButton onClick={toggleVisibility} />
 
       <div>
@@ -118,7 +118,7 @@ const SideOption = React.memo(() => {
         />
       </div>
 
-      <div className="mt-4 ml-4">
+      <div className="mt-4 ml-4 mr-4">
         <SystemPrompt
           isExpanded={expandedPrompt}
           onToggle={() => setExpandedPrompt((prev) => !prev)}

@@ -150,7 +150,6 @@ const MessageInput = React.memo(
     const renderTextarea = (isNoGenerate = false) => {
       const moveClass = isNoGenerate ? MOVE_CLASSES.NoGenerate : MOVE_CLASSES.Generate;
       
-      // Para tela estática (NoGenerate) ou quando adaptable está ativo
       const shouldUseSmallSize = isNoGenerate || adaptable;
       
       return (

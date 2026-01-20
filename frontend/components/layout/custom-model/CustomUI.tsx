@@ -1,9 +1,15 @@
 import { useCallback, useContext, useState, useEffect } from 'react';
-import { ControlCard, COLORS } from './ControlCard';
+import { ControlCard} from './ControlCard';
 import Header from '../../shared/header/Header';
 import { AppContext } from '../../../global/AppProvider';
 import { modelCardsDetails } from '../../../global/data';
 import { config_model } from '@/global/global';
+
+enum COLORS  {
+  PRIMARY_THEMA = 'dark-bg-primary',
+  TEXT_PRIMARY = 'dark-text-primary',
+  TEXT_SECONDARY = 'dark-text-secondary',
+};
 
 interface Model {
   id: string;

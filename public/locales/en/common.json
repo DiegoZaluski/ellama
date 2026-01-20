@@ -20,19 +20,9 @@
 
   "topCards": [
     {
-      "title": "Developing",
-      "detail": "Source. Models with fixed sources, fewer errors and voice interaction for support.",
-      "indicator": "Focus on error reduction."
-    },
-    {
       "title": "Test Chat",
       "detail": "Testing models. Environment to test models by adjusting parameters and evaluating quality.",
       "indicator": "Designed for quick testing, also works as regular chat."
-    },
-    {
-      "title": "Developing",
-      "detail": "Schedule. Organize studies and work with custom templates for efficient and faster progress.",
-      "indicator": "create routines and schedules focused on what really works"
     },
     {
       "title": "Custom",
@@ -41,8 +31,18 @@
     },
     {
       "title": "Developing",
-      "detail": "Video lessons. Convert study history into video reviews or create personalized support videos.",
-      "indicator": "Requires dedicated GPU for video processing."
+      "detail": "",
+      "indicator": ""
+    },
+    {
+      "title": "Developing",
+      "detail": "",
+      "indicator": ""
+    },
+    {
+      "title": "Developing",
+      "detail": "",
+      "indicator": ""
     }
   ]
 }

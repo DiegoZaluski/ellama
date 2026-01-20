@@ -4,7 +4,7 @@
  * @returns {boolean} True if overlay windows are supported, false otherwise.
  */
 function isOverlaySupported() {
-  if (process.platform === 'win32') return true;
+  if (process.platform === 'win32') return false;
   if (process.platform === 'darwin') return false;
   
   if (process.platform === 'linux') {

@@ -61,12 +61,10 @@ const createWindow = async () => {
     console.log('WebSocket reconnection triggered by server manager');
     websocketManager.connectToPythonServer(mainWindow);
   });
-
-  const isDev = !app.isPackaged;
   
-  if (isDev) {
-    await mainWindow.loadURL('http://localhost:3000/');
-    mainWindow.webContents.openDevTools();
+  if (!app.isPackaged) {
+    await mainWindow.loadURL('http://localhost:3000/'); // loading... (server page)
+    // mainWindow.webContents.openDevTools();
   } else {
     await mainWindow.loadFile(path.join(__dirname, 'dist', 'index.html'));
   }

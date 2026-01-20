@@ -94,8 +94,6 @@ const Chat = ({ adaptable, newWindow }: { adaptable: AdaptableProps; newWindow?:
       w-full
       p-0
       m-0
-      paddEnv
-      noScroll
       ${newWindow ? 'bg-black/50' : COLORS.BACKGROUND}
       ${COLORS.TEXT}
       ${adaptable ? 'h-full' : newWindow ? 'h-full rounded-xl' : 'h-screen'}

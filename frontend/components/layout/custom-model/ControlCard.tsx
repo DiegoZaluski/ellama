@@ -5,10 +5,10 @@ import TokensControl from './TokensControl';
 import { GetConfigLlm } from '@/global/GetConfigLlm';
 import { config_model } from '@/global/global';
 
-export const COLORS = {
-  PRIMARY_THEMA: 'dark-bg-primary',
-  TEXT_PRIMARY: 'dark-text-primary',
-  TEXT_SECONDARY: 'dark-text-secondary',
+enum COLORS  {
+  PRIMARY_THEMA = 'dark-bg-primary',
+  TEXT_PRIMARY = 'dark-text-primary',
+  TEXT_SECONDARY = 'dark-text-secondary',
 };
 
 export interface Model {

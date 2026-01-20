@@ -69,7 +69,6 @@ const COPY_TIMEOUT_MS = 2000;
 
  
 (() => { 
-/*01001001011001100010000001111001011011110111010100100000011100110111010001101111011100000111000001100101011001000010000001110100011011110010000001110100011100100110000101101110011100110110110001100001011101000110010100101100001000000111100101101111011101010010011101110010011001010010000001100111011000010111100100101110*/
   if (typeof window !== 'undefined' && !(window as any).__syntaxHighlighterRegistered) {
 
     Object.entries(LANGUAGES).forEach(([name, lang]) => {
@@ -168,7 +167,7 @@ const CodeBlock: FC<CodeBlockProps> = ({ children, className, ...props }) => {
   if (!match) return <InlineCode>{children}</InlineCode>;
 
   return (
-    <div className="relative group w-full max-w-full overflow-hidden bg-[#0000004D] border border-black rounded-lg p-1">
+    <div className="relative group w-full max-w-full overflow-hidden bg-[#0000004D] rounded-lg p-6"> {/*code block style*/}
       <button
         onClick={() => copy(code)}
         className="absolute top-2 right-2 p-2 bg-c-500 hover:bg-c-600 active:bg-c-700 rounded-md opacity-0 group-hover:opacity-100 transition-all duration-200 z-10 shadow-sm"
@@ -287,8 +286,14 @@ const ResBox: FC<ResBoxProps> = memo(({
   }
 
   return (
-    <div className={`fixed inset-0 flex items-start justify-center pt-20 pl-10 pr-10 scrollbar-hide ${className}`} style={{ zIndex: 1, pointerEvents: 'none' }}>
-      <div className="relative w-full max-w-4xl p-4 pointer-events-auto scrollbar-hide text-white/80" style={{ maxHeight: '65vh', overflowY: 'auto' }}>
+    <div className={`fixed inset-0 flex items-start justify-center pt-20 pl-10 pr-10 scrollbar-hide z-1 ${className} `} style={{pointerEvents: 'none' }}>
+      <div className={`relative w-full max-w-4xl p-4 pointer-events-auto 
+        ${adaptable
+          ? 'scrollbar-hide' 
+          : document.documentElement.getAttribute('data-theme') === 'dark' 
+          ? '' : 'scrollbar-hide' } text-white/80`} // why yes
+
+        style={{ maxHeight: '65vh', overflowY: 'auto' }}>
         {processedMessages.map((msg) => (
           <React.Fragment key={msg.id}>
             {msg.type === 'user' && (
@@ -330,7 +335,7 @@ const ResBox: FC<ResBoxProps> = memo(({
         )}
 
         {isGenerating && !currentResponse && showTypingIndicator && (
-          isSearching ? <div className="w-full h-[200px]"><SearchAnime color="white" /></div> : <TypingIndicator />
+          isSearching ? <div className="w-full h-[200px]"><SearchAnime color="white" /> </div> : <TypingIndicator />
         )}
 
         <div ref={messagesEndRef} />

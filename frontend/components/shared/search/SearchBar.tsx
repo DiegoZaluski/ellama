@@ -42,7 +42,7 @@ const SearchBar: React.FC<SearchBarProps> = ({
           py-2
           focus:outline-none
           rounded-xl
-          border
+          border-b-2
           text-white
           w-50
           h-12

@@ -7,6 +7,10 @@ import { MinimizeBtn, MaximizeBtn, CloseBtn, BackBtn } from '../buttons/CtrlWind
 import ButtonI18n from '../buttons/ButtonI18n';
 import { SiHuggingface as Huggingface } from 'react-icons/si';
 
+enum color {
+  yllow = 'text-yellow-500'
+}
+
 interface headerProps {
   isHome?: boolean;
   isChat?: boolean;
@@ -40,7 +44,7 @@ function Header({ isHome = false, isChat = false }: headerProps) {
             className="justify-self-center flex items-center 
         space-x-2 flex-row"
           >
-            <Huggingface size={36} className='text-yellow-500'/>
+            <Huggingface size={36} className={`${color.yllow}`}/>
           </div>
         ) : (
           <div className="justify-self-center flex items-center space-x-2 flex-row w-full h-16"></div>

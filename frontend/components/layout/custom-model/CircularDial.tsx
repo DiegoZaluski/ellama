@@ -1,7 +1,12 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
-import { COLORS } from './ControlCard';
 import { Sparkle, Repeat, Minus, Zap, Filter, PieChart, Gauge } from 'lucide-react';
 import { dispatchLlamaConfigEvent, LlamaConfigEventDetail } from '../../../global/eventCofigLlm';
+
+enum COLORS  { // --- create file for STYLES, leter... ---
+  PRIMARY_THEMA = 'dark-bg-primary',
+  TEXT_PRIMARY = 'dark-text-primary',
+  TEXT_SECONDARY = 'text-yellow-500',
+};
 
 interface CircularDialProps {
   value: number;

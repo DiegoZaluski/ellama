@@ -21,19 +21,9 @@
     
     "topCards": [
     {
-        "title": "Developing",
-        "detail": "Source. Modelos com fontes fixas, menos erros e interação por voz para suporte.",
-        "indicator": "Foco na redução de erros."
-    },
-    {
         "title": "Test Chat",
         "detail": "Teste modelos. Ambiente para testar modelos ajustando parâmetros e avaliando qualidade.",
         "indicator": "Projetado para testes rápidos, também funciona como chat comum."
-    },
-    {
-        "title": "Developing",
-        "detail": "Cronograma. Organize estudos e trabalho com modelos personalizados para um progresso eficiente e mais rápido.",
-        "indicator": "crie rotinas e cronogramas com foco no que realmente funciona"
     },
     {
         "title": "Custom",
@@ -42,8 +32,18 @@
     },
     {
         "title": "Developing",
-        "detail": "Videoaula. Converta histórico de estudos em revisões em vídeo ou crie vídeos de apoio personalizados.",
-        "indicator": "Requer GPU dedicada para processamento de vídeo."
+        "detail": "",
+        "indicator": ""
+    },
+    {
+        "title": "Developing",
+        "detail": "",
+        "indicator": ""
+    },
+    {
+        "title": "Developing",
+        "detail": "",
+        "indicator": ""
     }
     ]
     }
