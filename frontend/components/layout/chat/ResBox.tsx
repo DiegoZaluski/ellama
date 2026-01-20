@@ -1,3 +1,4 @@
+// Reminder to myself: fix the HTML
 import React, { 
   memo, 
   useMemo, 

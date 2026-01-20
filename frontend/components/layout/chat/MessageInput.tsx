@@ -4,22 +4,7 @@ import { useTranslation } from 'react-i18next';
 // import SearchButton from './SearchButton';
 // import ThinkButton from './ThinkButton';
 // import ClearButton from './ClearButton';
-
-const COLORS = {
-  background: 'bg-[#0000004D]',
-  text: 'text-white',
-  caret: 'caret-white',
-  border: 'border-black border-b-2',
-  newWindowBorder: 'border-white/50 border-b-2 ', //leave space at the end
-  newWindowBg: 'bg-white/5',
-  button: {
-    base: 'bg-[#F5F5DC]',
-    hover: 'hover:bg-white',
-    generating: 'hover:bg-red-500 hover:text-white',
-    disabled: 'disabled:opacity-50 disabled:cursor-not-allowed',
-  },
-  tooltip: 'bg-black/30 text-white',
-};
+import { COLORS } from './ct-styles';
 
 // TRANSLATION: move textArea and nearby components
 const MOVE_CLASSES = {
@@ -27,43 +12,36 @@ const MOVE_CLASSES = {
   Generate: 'translate-y-2',
 };
 
-interface ClearTooltipProps {
-  tooltipRef: RefObject<HTMLSpanElement>;
-  className?: string;
-}
+// interface ClearTooltipProps {
+//   tooltipRef: RefObject<HTMLSpanElement>;
+//   className?: string;
+// }
 
 // Combine with the ClearButton component.
-const ClearTooltip = React.memo(({ tooltipRef, className }: ClearTooltipProps) => {
-  const { t } = useTranslation('common');
-  return (
-    <span
-      id="clear"
-      ref={tooltipRef}
-      className={`
-        ${className}
-        w-28 
-        flex 
-        items-center 
-        justify-center 
-        self-center 
-        translate-y-[-100%] 
-        mb-2 
-        px-2 
-        py-2 
-        rounded 
-        ${COLORS.tooltip}
-        text-xs 
-        whitespace-nowrap 
-        opacity-0 
-        transition-opacity 
-        duration-300 
-        pointer-events-none`}
-      role="tooltip"
-    >
-      {t('clear', { returnObjects: false })}
-    </span>
-  );
-});
+// const ClearTooltip = React.memo(({ tooltipRef, className }: ClearTooltipProps) => {
+//   const { t } = useTranslation('common');
+//   return (
+//     <span
+//       id="clear"
+//       ref={tooltipRef}
+//       className={`
+//         ${className}
+//         w-28 
+//         flex items-center justify-center self-center   
+//         translate-y-[-100%] 
+//         mb-2 px-2 py-2   
+//         rounded 
+//         ${COLORS.tooltip}
+//         text-xs 
+//         whitespace-nowrap 
+//         opacity-0 transition-opacity duration-300 
+//         pointer-events-none`}
+//       role="tooltip"
+//     >
+//       {t('clear', { returnObjects: false })}
+//     </span>
+//   );
+// });
 
 interface MessageInputProps {
   textareaRef: RefObject<HTMLTextAreaElement>;

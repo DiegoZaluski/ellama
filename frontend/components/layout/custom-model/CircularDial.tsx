@@ -1,12 +1,7 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
 import { Sparkle, Repeat, Minus, Zap, Filter, PieChart, Gauge } from 'lucide-react';
 import { dispatchLlamaConfigEvent, LlamaConfigEventDetail } from '../../../global/eventCofigLlm';
-
-enum COLORS  { // --- create file for STYLES, leter... ---
-  PRIMARY_THEMA = 'dark-bg-primary',
-  TEXT_PRIMARY = 'dark-text-primary',
-  TEXT_SECONDARY = 'text-yellow-500',
-};
+import { COLORS } from './cm-styles'
 
 interface CircularDialProps {
   value: number;
@@ -180,15 +175,15 @@ export const CircularDial = ({
             gap-3
           "
         >
-          {label === 'Temperature' && <Gauge size={SIZE} className={COLORS.TEXT_SECONDARY} />}
-          {label === 'Top P' && <Sparkle size={SIZE} className={COLORS.TEXT_SECONDARY} />}
-          {label === 'Top K' && <Sparkle size={SIZE} className={COLORS.TEXT_SECONDARY} />}
-          {label === 'Repeat' && <Repeat size={SIZE} className={COLORS.TEXT_SECONDARY} />}
-          {label === 'Freq Penalty' && <Minus size={SIZE} className={COLORS.TEXT_SECONDARY} />}
-          {label === 'Pres Penalty' && <Minus size={SIZE} className={COLORS.TEXT_SECONDARY} />}
-          {label === 'Mirostat Tau' && <Zap size={SIZE} className={COLORS.TEXT_SECONDARY} />}
-          {label === 'Min P' && <Filter size={SIZE} className={COLORS.TEXT_SECONDARY} />}
-          {label === 'TFS Z' && <PieChart size={SIZE} className={COLORS.TEXT_SECONDARY} />}
+          {label === 'Temperature' && <Gauge size={SIZE} className={COLORS.COLOR_ICONS} />}
+          {label === 'Top P' && <Sparkle size={SIZE} className={COLORS.COLOR_ICONS} />}
+          {label === 'Top K' && <Sparkle size={SIZE} className={COLORS.COLOR_ICONS} />}
+          {label === 'Repeat' && <Repeat size={SIZE} className={COLORS.COLOR_ICONS} />}
+          {label === 'Freq Penalty' && <Minus size={SIZE} className={COLORS.COLOR_ICONS} />}
+          {label === 'Pres Penalty' && <Minus size={SIZE} className={COLORS.COLOR_ICONS} />}
+          {label === 'Mirostat Tau' && <Zap size={SIZE} className={COLORS.COLOR_ICONS} />}
+          {label === 'Min P' && <Filter size={SIZE} className={COLORS.COLOR_ICONS} />}
+          {label === 'TFS Z' && <PieChart size={SIZE} className={COLORS.COLOR_ICONS} />}
           <span className="font-medium">{label === 'Temperature' ? 'Temp' : label}:</span>
           <input
             type="number"

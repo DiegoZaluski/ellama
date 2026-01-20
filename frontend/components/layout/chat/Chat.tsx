@@ -6,12 +6,7 @@ import { useLlama } from '../../../hooks/useLlama';
 import { AppContext } from '../../../global/AppProvider';
 import SideOption from './SideOption';
 import Header from '@/components/shared/header/Header';
-
-const COLORS = {
-  BACKGROUND: 'bg-chat',
-  TEXT: 'text-white',
-  SHADOW: 'shadow-b-md',
-} as const;
+import { COLORS } from './ct-styles'
 
 const useTooltip = () => {
   const tooltipRef = useRef(null);
