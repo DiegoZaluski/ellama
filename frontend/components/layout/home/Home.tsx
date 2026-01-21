@@ -203,18 +203,46 @@ function Home() {
               max-w-7xl 
               mt-10
             `}>
-              {filteredItems.map((item, index) => (
-                <BottomCard 
-                  key={index} 
-                  item={item} 
-                  index={index} 
-                  icon={
-                    <Huggingface 
-                      key={'huggingface'} 
-                      className="text-yellow-600" 
-                      size={24} />
-                  } />
-              ))}
+              {filteredItems.map((item, index) => {
+                if ((item as any)?.uncensored) return;
+                return (
+                  <BottomCard 
+                    key={index} 
+                    item={item} 
+                    index={index} 
+                    icon={
+                      <Huggingface 
+                        key={'huggingface'} 
+                        className="text-yellow-600" 
+                        size={24} />
+                    } />
+                )
+              })}
+              <div className={`col-span-1 md:col-span-2 lg:col-span-5 mt-8 border-t border-white/10`}/>
+
+              <h1 className={`
+                w-56  
+                col-span-1 md:col-span-2 lg:col-span-5 
+                text-xl
+                font-semibold font-playfair   
+                rounded-md
+                dark-text-primary`}>uncensored🗡️</h1>
+
+              {filteredItems.map((item, index) => {
+                if (!(item as any)?.uncensored) return;
+                return (
+                  <BottomCard 
+                    key={index} 
+                    item={item} 
+                    index={index} 
+                    icon={
+                      <Huggingface 
+                        key={'huggingface'} 
+                        className="text-yellow-600" 
+                        size={24} />
+                    } />
+                )
+              })}
             </div>
           )}
         </SearchController>

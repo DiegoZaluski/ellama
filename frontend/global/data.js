@@ -26,12 +26,6 @@ export const modelCardsDetails = [
     fullModelName: 'deepseek-coder-6.7b-instruct.Q4_K_M.gguf',
   },
   {
-    modelName: 'Phi-3 Mini',
-    memoryUsage: '2.5 GB RAM',
-    intelligenceLevel: 'Balanced',
-    fullModelName: 'phi-3-mini-4k-instruct.Q4_K_M.gguf',
-  },
-  {
     modelName: 'Llama 3.2 1B',
     memoryUsage: '1.1 GB RAM',
     intelligenceLevel: 'Ultra Fast',
@@ -132,8 +126,16 @@ export const modelCardsDetails = [
     memoryUsage: '6.4 GB RAM',
     intelligenceLevel: 'High',
     fullModelName: 'chinese-alpaca-2-7b.Q4_K_M.gguf',
+  },
+  {
+  uncensored:'uncensored',
+  modelName: 'Llama 3 8B Abliterated',
+  memoryUsage: '4.9 GB RAM',
+  intelligenceLevel: 'Very High',
+  fullModelName: 'Meta-Llama-3-8B-Instruct-Abliterated-Q4_K_M.gguf',
   }
 ];
+
 
 // model search
 export const deepResearchModels = [

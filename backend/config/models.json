@@ -30,15 +30,6 @@
       ]
     },
     {
-      "id": "phi-3-mini-4k-instruct.Q4_K_M.gguf",
-      "name": "Phi-3 Mini",
-      "filename": "Phi-3-mini-4k-instruct-q4.gguf",
-      "size_gb": 2.3,
-      "urls": [
-        "https://huggingface.co/microsoft/Phi-3-mini-4k-instruct-gguf/resolve/main/Phi-3-mini-4k-instruct-q4.gguf"
-      ]
-    },
-    {
       "id": "llama-3.1-8b-instruct.Q4_K_M.gguf",
       "name": "Llama 3.1 8B",
       "filename": "llama-3.1-8b-instruct.Q4_K_M.gguf",
@@ -199,6 +190,16 @@
       "urls": [
         "https://huggingface.co/TheBloke/chinese-alpaca-2-7B-GGUF/resolve/main/chinese-alpaca-2-7b.Q4_K_M.gguf"
       ]
+    },
+    {
+      "id": "Meta-Llama-3.1-8B-Instruct-abliterated-Q4_K_M.gguf",
+      "name": "Llama 3.1 8B Abliterated",
+      "filename": "Meta-Llama-3.1-8B-Instruct-abliterated-Q4_K_M.gguf",
+      "size_gb": 4.9,
+      "urls": [
+        "https://huggingface.co/bartowski/Meta-Llama-3.1-8B-Instruct-abliterated-GGUF/resolve/main/Meta-Llama-3.1-8B-Instruct-abliterated-Q4_K_M.gguf"
+      ]
     }
+
   ]
 }
