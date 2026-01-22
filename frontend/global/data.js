@@ -128,12 +128,55 @@ export const modelCardsDetails = [
     fullModelName: 'chinese-alpaca-2-7b.Q4_K_M.gguf',
   },
   {
-  uncensored:'uncensored',
-  modelName: 'Llama 3 8B Abliterated',
+  uncensored: 'uncensored',
+  modelName: 'Guanaco 7B Uncensored',
+  memoryUsage: '4.2 GB RAM',
+  intelligenceLevel: 'High',
+  fullModelName: 'guanaco-7b-uncensored.q4_K_M.gguf'
+  },
+  {
+  uncensored: 'uncensored',
+  modelName: 'Llama 3.2 3B Instruct Uncensored',
+  memoryUsage: '2.5 GB RAM',
+  intelligenceLevel: 'Medium',
+  fullModelName: 'Llama-3.2-3B-Instruct-uncensored-Q4_K_M.gguf'
+},
+{
+  uncensored: 'uncensored',
+  modelName: 'Phi 3.5 Mini Instruct Uncensored',
+  memoryUsage: '2.8 GB RAM',
+  intelligenceLevel: 'Medium-High',
+  fullModelName: 'Phi-3.5-mini-instruct_Uncensored-Q4_K_M.gguf'
+},
+{
+  uncensored: 'uncensored',
+  modelName: 'Lexi Llama 3 8B Uncensored',
   memoryUsage: '4.9 GB RAM',
+  intelligenceLevel: 'High',
+  fullModelName: 'Lexi-Llama-3-8B-Uncensored-Q4_K_M.gguf'
+},
+{
+  uncensored: 'uncensored',
+  modelName: 'Llama 3.1 8B Lexi Uncensored',
+  memoryUsage: '4.9 GB RAM',
+  intelligenceLevel: 'High',
+  fullModelName: 'Llama-3.1-8B-Lexi-Uncensored-Q4_K_M.gguf'
+},
+{
+  uncensored: 'uncensored',
+  modelName: 'Qwen 2.5 14B Uncensored Instruct',
+  memoryUsage: '8.5 GB RAM',
   intelligenceLevel: 'Very High',
-  fullModelName: 'Meta-Llama-3-8B-Instruct-Abliterated-Q4_K_M.gguf',
-  }
+  fullModelName: 'Qwen2.5-14B_Uncensored_Instruct-Q4_K_M.gguf'
+},
+{
+  uncensored: 'uncensored',
+  modelName: 'Phi 3 Uncensored Chat',
+  memoryUsage: '2.8 GB RAM',
+  intelligenceLevel: 'Medium',
+  fullModelName: 'luvGPT_phi3-uncensored-chat-Q4_K_M.gguf'
+}
+
 ];
 
 

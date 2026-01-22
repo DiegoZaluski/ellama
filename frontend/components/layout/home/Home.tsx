@@ -240,7 +240,9 @@ function Home() {
                         key={'huggingface'} 
                         className="text-yellow-600" 
                         size={24} />
-                    } />
+                    } 
+                    uncensored = {true}
+                    />
                 )
               })}
             </div>

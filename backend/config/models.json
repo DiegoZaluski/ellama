@@ -192,14 +192,67 @@
       ]
     },
     {
-      "id": "Meta-Llama-3.1-8B-Instruct-abliterated-Q4_K_M.gguf",
-      "name": "Llama 3.1 8B Abliterated",
-      "filename": "Meta-Llama-3.1-8B-Instruct-abliterated-Q4_K_M.gguf",
+      "id": "guanaco-7b-uncensored.q4_K_M.gguf",
+      "name": "Guanaco 7B Uncensored",
+      "filename": "guanaco-7b-uncensored.q4_K_M.gguf",
+      "size_gb": 4.2,
+      "urls": [
+        "https://huggingface.co/TheBloke/Guanaco-7B-Uncensored-GGUF/resolve/main/guanaco-7b-uncensored.q4_K_M.gguf"
+      ]
+    },
+    {
+      "id": "Llama-3.2-3B-Instruct-uncensored-Q4_K_M.gguf",
+      "name": "Llama 3.2 3B Instruct Uncensored",
+      "filename": "Llama-3.2-3B-Instruct-uncensored-Q4_K_M.gguf",
+      "size_gb": 2.5,
+      "urls": [
+        "https://huggingface.co/bartowski/Llama-3.2-3B-Instruct-uncensored-GGUF/resolve/main/Llama-3.2-3B-Instruct-uncensored-Q4_K_M.gguf"
+      ]
+    },
+    {
+      "id": "Phi-3.5-mini-instruct_Uncensored-Q4_K_M.gguf",
+      "name": "Phi 3.5 Mini Instruct Uncensored",
+      "filename": "Phi-3.5-mini-instruct_Uncensored-Q4_K_M.gguf",
+      "size_gb": 2.8,
+      "urls": [
+        "https://huggingface.co/bartowski/Phi-3.5-mini-instruct_Uncensored-GGUF/resolve/main/Phi-3.5-mini-instruct_Uncensored-Q4_K_M.gguf"
+      ]
+    },
+    {
+      "id": "Lexi-Llama-3-8B-Uncensored-Q4_K_M.gguf",
+      "name": "Lexi Llama 3 8B Uncensored",
+      "filename": "Lexi-Llama-3-8B-Uncensored-Q4_K_M.gguf",
       "size_gb": 4.9,
       "urls": [
-        "https://huggingface.co/bartowski/Meta-Llama-3.1-8B-Instruct-abliterated-GGUF/resolve/main/Meta-Llama-3.1-8B-Instruct-abliterated-Q4_K_M.gguf"
+        "https://huggingface.co/bartowski/Lexi-Llama-3-8B-Uncensored-GGUF/resolve/main/Lexi-Llama-3-8B-Uncensored-Q4_K_M.gguf"
+      ]
+    },
+    {
+      "id": "Llama-3.1-8B-Lexi-Uncensored-Q4_K_M.gguf",
+      "name": "Llama 3.1 8B Lexi Uncensored",
+      "filename": "Llama-3.1-8B-Lexi-Uncensored-Q4_K_M.gguf",
+      "size_gb": 4.9,
+      "urls": [
+        "https://huggingface.co/bartowski/Llama-3.1-8B-Lexi-Uncensored-GGUF/resolve/main/Llama-3.1-8B-Lexi-Uncensored-Q4_K_M.gguf"
+      ]
+    },
+    {
+      "id": "Qwen2.5-14B_Uncensored_Instruct-Q4_K_M.gguf",
+      "name": "Qwen 2.5 14B Uncensored Instruct",
+      "filename": "Qwen2.5-14B_Uncensored_Instruct-Q4_K_M.gguf",
+      "size_gb": 8.5,
+      "urls": [
+        "https://huggingface.co/bartowski/Qwen2.5-14B_Uncensored_Instruct-GGUF/resolve/main/Qwen2.5-14B_Uncensored_Instruct-Q4_K_M.gguf"
+      ]
+    },
+    {
+      "id": "luvGPT_phi3-uncensored-chat-Q4_K_M.gguf",
+      "name": "Phi 3 Uncensored Chat",
+      "filename": "luvGPT_phi3-uncensored-chat-Q4_K_M.gguf",
+      "size_gb": 2.8,
+      "urls": [
+        "https://huggingface.co/bartowski/luvGPT_phi3-uncensored-chat-GGUF/resolve/main/luvGPT_phi3-uncensored-chat-Q4_K_M.gguf"
       ]
     }
-
   ]
 }

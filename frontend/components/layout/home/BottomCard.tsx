@@ -16,9 +16,11 @@ interface BottomCardProps {
   };
   index: number;
   icon: React.ReactNode;
+  uncensored?: boolean;
 }
 
-function BottomCard({ item, index, icon }: BottomCardProps) {
+function BottomCard({ item, index, icon, uncensored = false  }: BottomCardProps) {
+  
   const { t } = useTranslation('common');
 
   return (
@@ -40,17 +42,18 @@ function BottomCard({ item, index, icon }: BottomCardProps) {
         relative"
     >
       <div
-        className="
+        className={`
         w-full 
         h-full 
-        bg-card 
+        ${uncensored ? 'bg-black' : 'bg-card '}
         rounded-2xl p-6 
         space-y-3 
         flex 
         flex-col 
         justify-start 
         transition-colors 
-        duration-200"
+        duration-200          
+          `}
       >
         {icon}
         <Download modelId={item.fullModelName} />
