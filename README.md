@@ -54,6 +54,10 @@ python -m venv venv
 pip install -r requirements.txt
 pip install -e .
 ```
+## important
+Install a gguf model in: [llama.cpp models](llama.cpp/models) and then add the model name in: [model.json](backend/config/current_model.json)
+
+(***Don't forget to compile llama.cpp.***)
 
 ---
 
