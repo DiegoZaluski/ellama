@@ -123,6 +123,8 @@ MANIFEST
 llama.cpp/
 transformers/
 
+moltbot/
+
 # Project specific exclusions
 compiled
 compiled_app_output

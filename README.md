@@ -1,6 +1,6 @@
-# 🧬 huglab (v0.0.1 - Alpha)
+# 🧬 aihub (v0.0.1 - Alpha)
 
-**huglab** is a local sandbox designed for testing and managing **GGUF models**. It offers a clean, straightforward interface to download, switch, and experiment with local AI models, giving you full control over parameters and model management.
+**aihub** is a local sandbox designed for testing and managing **GGUF models**. It offers a clean, straightforward interface to download, switch, and experiment with local AI models, giving you full control over parameters and model management.
 
 ---
 
@@ -33,8 +33,9 @@ While we are starting small, here is what’s on the horizon:
 ### 2. Main Installation
 ```bash
 # Clone the repository
-git clone <repository-url>
 cd huglab
+git clone https://github.com/ggml-org/llama.cpp
+git clone https://github.com/moltbot/moltbot
 
 # Install dependencies
 npm install
