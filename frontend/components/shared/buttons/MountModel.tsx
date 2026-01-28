@@ -1,25 +1,3 @@
-/**
- * MountModel Component
- * 
- * A button component that handles the mounting and unmounting of 3D models.
- * It provides visual feedback during the loading process and error states.
- * 
- * @component
- * @example
- * ```tsx
- * <MountModel 
- *   modelName="example-model"
- *   className="mt-4"
- *   testMode={false}
- * />
- * ```
- * 
- * @param {Object} props - The component props
- * @param {string} props.modelName - The name of the model to be mounted
- * @param {string} [props.className=''] - Additional CSS classes for the button
- * @param {boolean} [props.testMode=false] - Enable test mode for development
- * @returns {JSX.Element} A button that controls model mounting with loading states
- */
 import { useState, useEffect, useContext } from 'react';
 import { Orbit, Check, X } from 'lucide-react';
 import { useStorage } from '../../../hooks/useStorage';
@@ -37,7 +15,7 @@ const colors = {
   success: '',
   error: 'text-err',
   loading: 'bg-gray-400 cursor-not-allowed',
-  textInit: 'text-card',
+  textInit: 'text-n-900',
   icons: 'white',
 };
 
@@ -135,7 +113,7 @@ export const MountModel = ({ modelName, className = '', testMode = false }: Moun
           onMouseLeave={() => setShowTooltip(false)}
           className={`
             flex items-center gap-2 px-4 py-2font-medium rounded-lg
-            transition-all duration-200 ease-in-out relative z-10
+            transition-all duration-200 ease-in-out relative z-10 mono
             ${colors.textInit}
             ${status === 'idle' ? colors.primary : ''}
             ${status === 'success' ? colors.success : ''}

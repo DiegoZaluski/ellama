@@ -5,12 +5,11 @@ import { AppContext } from '../../../global/AppProvider';
 
 // CONSTANTS: Color mapping for consistent styling across the component
 const COLORS = {
-  BORDER_DEFAULT: 'border-download',
+  BORDER_DEFAULT: 'border-black/10',
   BORDER_ERROR: 'border-red-500/50',
-  ICON_DEFAULT: 'text-card',
+  ICON_DEFAULT: 'text-white/50',
   BUTTON_HOVER: 'hover:bg-black/10',
   DISABLED_OPACITY: 'cursor-not-allowed opacity-50',
-  BW: () => document.documentElement.getAttribute('data-theme') === 'dark' ? '#8f8f86' : 'white',
 } as const;
 
 interface DownloadButtonProps {
@@ -94,13 +93,13 @@ export const Download = ({ modelId, className = '' }: DownloadButtonProps) => {
   // HELPER: Returns appropriate icon based on current download status
   const getIcon = (): JSX.Element => {
     
-    if (status === 'downloaded') return <Check stroke={COLORS.BW()} className="w-4 h-4 text-current" />;
+    if (status === 'downloaded') return <Check stroke={'#8f8f86'} className="w-4 h-4 text-current" />;
     if (status === 'downloading' || status === 'connecting')
       return <X className="w-4 h-4" stroke="white" />;
     if (status === 'error') return <AlertCircle className="w-4 h-4" />;
     if (status === 'checking')
-      return <DownloadIcon stroke={COLORS.BW()} className="w-4 h-4 animate-pulse" />;
-    return <DownloadIcon stroke={COLORS.BW()} className="w-4 h-4 text-current" />;
+      return <DownloadIcon stroke={'#8f8f86'} className="w-4 h-4 animate-pulse" />;
+    return <DownloadIcon stroke={'#8f8f86'} className="w-4 h-4 b-900" />;
   };
 
   // EFFECT: Syncs component state with global app state

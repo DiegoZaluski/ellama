@@ -124,6 +124,7 @@ llama.cpp/
 transformers/
 
 moltbot/
+core-bot/
 
 # Project specific exclusions
 compiled

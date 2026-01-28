@@ -26,7 +26,7 @@ import { useLlama } from '../../../hooks/useLlama';
 import { AppContext } from '../../../global/AppProvider';
 // import SideOption from './SideOption';
 import Header from '@/components/shared/header/Header';
-import { COLORS } from './ct-styles'
+import { COLORS } from './arts'
 
 const useTooltip = () => {
   const tooltipRef = useRef(null);
@@ -109,7 +109,7 @@ const Chat = ({ adaptable, newWindow }: { adaptable: AdaptableProps; newWindow?:
       w-full
       p-0
       m-0
-      ${newWindow ? 'bg-black/50' : COLORS.BACKGROUND}
+      bg-n-900
       ${COLORS.TEXT}
       ${adaptable ? 'h-full' : newWindow ? 'h-full rounded-xl' : 'h-screen'}
     `}
@@ -138,8 +138,8 @@ const Chat = ({ adaptable, newWindow }: { adaptable: AdaptableProps; newWindow?:
             isGenerating={isGenerating}
             showTypingIndicator={isGenerating}
             showWelcome={messages.length === 0}
-            adaptable={adaptable ? true : false}
-            newWindow={newWindow ? true : false}
+            adaptable={adaptable}
+            newWindow={newWindow}
           />
         </div>
 
@@ -156,8 +156,8 @@ const Chat = ({ adaptable, newWindow }: { adaptable: AdaptableProps; newWindow?:
           hideTooltip={hideTooltip}
           isGenerating={isGenerating}
           stopGeneration={stopGeneration}
-          adaptable={adaptable ? true : false}
-          newWindow={newWindow ? true : false}
+          adaptable={adaptable}
+          newWindow={newWindow}
         />
       </div>
 
@@ -172,7 +172,6 @@ const Chat = ({ adaptable, newWindow }: { adaptable: AdaptableProps; newWindow?:
           ${COLORS.TEXT}
           text-sm
         `}
-          style={{ backgroundColor: COLORS.BACKGROUND }}
         >
           <span>aihub&trade;</span>
         </footer>

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { COLORS } from './arts';
 
 function TopCard({ item, index }) {
   const destination = () => {
@@ -24,8 +25,7 @@ function TopCard({ item, index }) {
         className="
           w-72 
           h-96
-          bg-p-50
-          dark-bg-primary
+          bg-n-900
           rounded-3xl
           px-10
           py-8
@@ -41,16 +41,16 @@ function TopCard({ item, index }) {
       >
         <div className="w-full h-auto mb-4">
           <h3
-            className="
+            className={`
               text-2xl
-              font-bold
-              text-n-900
-              dark-text-secondary
+              font-semibold
               overflow-hidden
               whitespace-nowrap
               text-ellipsis
               leading-tight
-              font-playfair"
+              font-playfair
+              ${COLORS.text1}
+              `}
           >
             {item.title}
           </h3>
@@ -78,33 +78,36 @@ function TopCard({ item, index }) {
             duration-200"
         >
           <p
-            className="
-              dark-text-secondary
+            className={`
               text-lg
               font-semibold
-              leading-relaxed"
+              leading-relaxed
+              ${COLORS.text1}
+              `}
           >
             {item.detail.split('.')[0]}.
           </p>
           <p
-            className="
-              dark-text-secondary
+            className={`
               text-xs
               leading-relaxed
               mt-1"
+              ${COLORS.text1}
+              `}
           >
             {item.detail.split('.')[1] ? item.detail.split('.')[1].trim() : ''}
           </p>
           <p
-            className="
-              dark-text-secondary
+            className={`
               text-xs
               font-medium
               mt-auto
               border-t
               dark-border-primary
               pt-1
-              leading-relaxed"
+              leading-relaxed
+              ${COLORS.text1}
+              `}
           >
             {item.indicator}
           </p>

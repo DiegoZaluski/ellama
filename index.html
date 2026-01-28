@@ -7,23 +7,41 @@
     <title>huglab</title>
     <link rel="stylesheet" href="/frontend/style/styles.css" />
     <link rel="stylesheet" href="/frontend/style/colors.css" />
-    <link rel="stylesheet" href="/frontend/style/theme.css" />
     <link rel="stylesheet" href="/frontend/style/fonts.css" />
     <style>
-      
-      ::-webkit-scrollbar {
-        background-color:#ececec;
-      }
+    ::-webkit-scrollbar {
+      width: 16px;
+      background-color: #0a0a0a;
+    }
 
-      ::-webkit-scrollbar-thumb {
-        background-color: #151517;
-      }
+    ::-webkit-scrollbar-track {
+      background-color: #0a0a0a;
+    }
 
-      ::-webkit-scrollbar-button {
-        background-color:#eab308;
-        height: 7.8vh;
-      } 
+    ::-webkit-scrollbar-thumb {
+      background-color: #1a1a1a;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
 
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: #2a2a2a;
+    }
+
+    ::-webkit-scrollbar-button {
+      background-color: #eab308;
+      height: 7.8vh;
+      transition: background-color 0.3s ease;
+    }
+
+    ::-webkit-scrollbar-button:hover {
+      background-color: #f59e0b;
+    }
+
+    * {
+      scrollbar-width: auto;
+      scrollbar-color: #1a1a1a #0a0a0a;
+    }
     </style>
   </head>
   <body>

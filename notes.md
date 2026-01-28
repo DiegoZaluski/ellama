@@ -51,3 +51,8 @@ cmake --build . --config Release -j$(nproc)
 ./main --help
 # ou
 ./llama-cli --help
+
+
+molt-bot commads 
+
+pnpm start configure 

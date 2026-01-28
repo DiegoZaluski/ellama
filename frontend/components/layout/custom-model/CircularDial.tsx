@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
 import { Sparkle, Repeat, Minus, Zap, Filter, PieChart, Gauge } from 'lucide-react';
 import { dispatchLlamaConfigEvent, LlamaConfigEventDetail } from '../../../global/eventCofigLlm';
-import { COLORS } from './cm-styles'
+import { COLORS } from './arts'
 
 interface CircularDialProps {
   value: number;
@@ -289,7 +289,7 @@ export const CircularDial = ({
           <path
             d={`M 50 8 A 42 42 0 ${percentage > 50 ? 1 : 0} 1 ${x} ${y}`}
             fill="none"
-            stroke="var(--pur-400)"
+            stroke="white"
             strokeWidth="2.5"
             strokeLinecap="round"
           />

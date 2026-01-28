@@ -4,7 +4,6 @@ import { I18nextProvider } from 'react-i18next';
 import i18n from './i18n/i18n';
 import './style/styles.css';
 import './style/colors.css';
-import './style/theme.css';
 import './style/fonts.css';
 import App from './App.jsx';
 import { HashRouter } from 'react-router-dom';

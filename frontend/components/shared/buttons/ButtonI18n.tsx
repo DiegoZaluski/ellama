@@ -1,18 +1,3 @@
-/**
- * ButtonI18n Component
- **
- * A language selector button that allows users to switch between different languages.
- * It displays a dropdown with available languages and updates the application's i18n configuration.
- * 
- * @component
- * @example
- * ```tsx
- * <ButtonI18n className="ml-4" />
- * ```
- * 
- * @param {string} [className] - Additional CSS classes to apply to the button
- * @returns {JSX.Element} A language selector button with dropdown functionality
- */
 import { useState, useEffect, useContext } from 'react';
 import { useTranslation } from 'react-i18next';
 import { AppContext } from '../../../global/AppProvider';
@@ -34,38 +19,11 @@ const ButtonI18n = ({ className }: { className?: string }) => {
 
   useEffect(() => {
     switch (language) {
-      case 'ar':
-        i18n.changeLanguage('ar');
-        break;
-      case 'de':
-        i18n.changeLanguage('de');
-        break;
       case 'en':
         i18n.changeLanguage('en');
         break;
-      case 'es':
-        i18n.changeLanguage('es');
-        break;
-      case 'fr':
-        i18n.changeLanguage('fr');
-        break;
-      case 'it':
-        i18n.changeLanguage('it');
-        break;
-      case 'ja':
-        i18n.changeLanguage('ja');
-        break;
-      case 'ko':
-        i18n.changeLanguage('ko');
-        break;
       case 'pt':
         i18n.changeLanguage('pt');
-        break;
-      case 'ru':
-        i18n.changeLanguage('ru');
-        break;
-      case 'zh':
-        i18n.changeLanguage('zh');
         break;
     }
   }, [language, i18n]);
@@ -104,19 +62,18 @@ const ButtonI18n = ({ className }: { className?: string }) => {
         aria-label="Change language"
         title="Change language"
       >
-        <span
-          className={`
-    block
-    text-[1.1em]
-    font-medium
-    leading-none
-    -tracking-[0.5px]
-    transition-transform
-    duration-300
-    ease-out
-    hover:scale-125
-    text-n-900
-    ${className} 
+  <span
+    className={`
+      block
+      text-[1.1em]
+      font-medium
+      leading-none
+      -tracking-[0.5px]
+      transition-transform
+      duration-300
+      ease-out
+      hover:scale-125
+      text-white
     `}
         >
           Aあ

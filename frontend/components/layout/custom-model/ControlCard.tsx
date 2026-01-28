@@ -4,7 +4,7 @@ import { LoRaUpload, LoRaFile } from './LoRaUpload';
 import TokensControl from './TokensControl';
 import { GetConfigLlm } from '@/global/GetConfigLlm';
 import { config_model } from '@/global/global';
-import { COLORS } from './cm-styles'
+import { COLORS } from './arts'
 
 export interface Model {
   id: string;
@@ -108,7 +108,6 @@ export const ControlCard: React.FC<ControlCardProps> = memo(({ key_model, model,
       w-28/12 
       rounded-lg 
       overflow-hidden 
-      bg-white 
       ${COLORS.PRIMARY_THEMA}
     `}
     >

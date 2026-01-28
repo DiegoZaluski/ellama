@@ -3,9 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Download } from '../../shared/download/Download';
 import DownloadProgress from '../../shared/download/DownloadProgress';
 import { MountModel } from '../../shared/buttons/MountModel';
-const COLORS = {
-  text: 'text-card',
-} as const;
+import { COLORS } from './arts';
 
 interface BottomCardProps {
   item: {
@@ -26,9 +24,8 @@ function BottomCard({ item, index, icon, uncensored = false  }: BottomCardProps)
   return (
     <div
       key={`bottom-card-${index + 5}`}
-      className=" 
+      className={`
         h-92 border 
-        dark-border-primary 
         rounded-3xl 
         shadow-2xl 
         flex 
@@ -39,13 +36,15 @@ function BottomCard({ item, index, icon, uncensored = false  }: BottomCardProps)
         duration-300 
         hover:translate-y-[-4px] 
         hover:shadow-xl 
-        relative"
+        relative
+        ${COLORS.border2}
+        `}
     >
       <div
         className={`
         w-full 
         h-full 
-        ${uncensored ? 'bg-black' : 'bg-card' }
+        ${uncensored ? 'bg-black' : 'bg-n-200' }
         rounded-2xl p-6 
         space-y-3 
         flex 
@@ -60,7 +59,7 @@ function BottomCard({ item, index, icon, uncensored = false  }: BottomCardProps)
 
         <h4
           className={`
-          ${COLORS.text} 
+          ${COLORS.text2} 
           text-lg 
           font-bold 
           mb-2 
@@ -76,14 +75,14 @@ function BottomCard({ item, index, icon, uncensored = false  }: BottomCardProps)
         <div className="space-y-2">
           <p
             className={`
-            ${COLORS.text} 
+            ${COLORS.text2} 
             text-sm`}
           >
             <span className="font-semibold">{t('memoryUsage', { returnObjects: false})}</span> {item.memoryUsage}
           </p>
           <p
             className={`
-            ${COLORS.text} 
+            ${COLORS.text2} 
             text-sm`}
           >
             <span className="font-semibold">{t('modelIntelligence', { returnObjects: false})}</span> {item.intelligenceLevel}

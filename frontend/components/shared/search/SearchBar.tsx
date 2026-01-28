@@ -1,16 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Search } from 'lucide-react';
+import { COLORS } from './arts';
 
 interface SearchBarProps {
   onSearchChange: (query: string, isSearching: boolean) => void;
   placeholder?: string;
   className?: string;
 }
-
-const COLORS = {
-  border: 'border-black',
-  bg_input: 'bg-input',
-} as const;
 
 const SearchBar: React.FC<SearchBarProps> = ({
   onSearchChange,
@@ -30,7 +26,9 @@ const SearchBar: React.FC<SearchBarProps> = ({
     <div
       className={`
       ${className} 
-      relative`}
+      relative
+      shadow-2xl
+      bg-bla`}
     >
       <input
         type="text"
@@ -47,8 +45,8 @@ const SearchBar: React.FC<SearchBarProps> = ({
           w-50
           h-12
           placeholder-white
-          ${COLORS.border}
-          ${COLORS.bg_input}
+          ${COLORS.border1}
+          ${COLORS.bg1}
           `}
       />
       <Search

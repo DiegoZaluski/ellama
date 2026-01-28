@@ -4,7 +4,7 @@ import Header from '../../shared/header/Header';
 import { AppContext } from '../../../global/AppProvider';
 import { modelCardsDetails } from '../../../global/data';
 import { config_model } from '@/global/global';
-import { COLORS } from './cm-styles'
+import { COLORS } from './arts'
 
 interface Model {
   id: string;

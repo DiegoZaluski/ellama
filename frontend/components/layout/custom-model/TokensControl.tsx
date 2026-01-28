@@ -99,8 +99,9 @@ const TokensControl = memo(
           [&::-webkit-outer-spin-button]:appearance-none 
           [&::-webkit-inner-spin-button]:appearance-none
           text-sm 
+          text-white
           font-bold 
-          bg-white/10 border border-white/10 
+          bg-white/10 
           rounded-lg 
           pt-1 
           pb-1 

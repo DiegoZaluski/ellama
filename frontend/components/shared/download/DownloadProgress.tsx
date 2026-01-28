@@ -147,8 +147,7 @@ const DownloadProgress: React.FC<DownloadProgressProps> = ({ modelId, size = 'md
         <div className="flex flex-col items-center gap-2">
           <CheckCircle2 size={currentSize.spinner} style={{ color: COLORS.progressFill }} />
           <p
-            className={`${currentSize.fontSize} font-medium`}
-            style={{ color: COLORS.textPrimary }}
+            className={`${currentSize.fontSize} text-white font-medium`}
           >
             model available!
           </p>

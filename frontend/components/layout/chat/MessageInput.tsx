@@ -49,7 +49,7 @@ import { useTranslation } from 'react-i18next';
 // import SearchButton from './SearchButton';
 // import ThinkButton from './ThinkButton';
 // import ClearButton from './ClearButton';
-import { COLORS } from './ct-styles';
+import { COLORS } from './arts';
 
 // TRANSLATION: move textArea and nearby components
 const MOVE_CLASSES = {
@@ -188,8 +188,8 @@ const MessageInput = React.memo(
           rows={1}
           style={{ scrollbarWidth: 'none' }}
           className={`
+            mono
             pl-6
-            placeholder:font-semibold
             ${isNoGenerate ? COLORS.background : 'bg-transparent'}
             w-full
             ${shouldUseSmallSize ? 'min-h-[6rem] max-h-20' : newWindow ? 'min-h-[5rem] max-h-20' : 'min-h-[5em] max-h-52'}

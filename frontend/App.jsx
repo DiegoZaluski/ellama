@@ -2,7 +2,6 @@ import { Routes, Route } from 'react-router-dom';
 import { AppProvider } from './global/AppProvider';
 import './style/styles.css';
 import './style/colors.css';
-import './style/theme.css';
 import './style/fonts.css';
 import Chat from './components/layout/chat/Chat';
 import Home from './components/layout/home/Home';

@@ -24,7 +24,7 @@ function Header({ isHome = false, isChat = false }: headerProps) {
   return (
     <header
       className={`
-      w-full h-20 px-8 bg-p-50 ${isHome ? 'dark-bg-primary' : isChat ? 'bg-chat' : 'dark-bg-primary'} shadow-2xl 
+      w-full h-20 px-8 bg-n-900 shadow-2xl 
       sticky top-0 z-50 transition-colors duration-200 drag-handle`}
     >
       <div className="h-full grid grid-cols-3 items-center">
@@ -44,7 +44,7 @@ function Header({ isHome = false, isChat = false }: headerProps) {
             className="justify-self-center flex items-center 
         space-x-2 flex-row"
           >
-            <Huggingface size={36} className={`${color.yllow}`}/>
+            <Huggingface size={36} className={`${'text-white/50'}`}/>
           </div>
         ) : (
           <div className="justify-self-center flex items-center space-x-2 flex-row w-full h-16"></div>
@@ -54,7 +54,7 @@ function Header({ isHome = false, isChat = false }: headerProps) {
           <div className="flex items-center space-x-4">
             <StatusBox />
             <ButtonI18n className="text-n-900 dark-text-primary" />
-            <ButtonTheme className="p-6" />
+            {/* <ButtonTheme className="p-6" /> */}
             <MinimizeBtn stroke={stroke} />
             <MaximizeBtn stroke={stroke} />
             <CloseBtn stroke={stroke} />

@@ -4,7 +4,7 @@
     "name": "Nome",
     "question": "pergunta",
     "clear": "limpar Chat",
-    "search": "Digite o nome do modelo",
+    "search": "Digite qual modelo",
     "memoryUsage": "Uso de Memória:",
     "modelIntelligence":"Nível de Inteligência:",
     "loraAdjust":"Ajustes leves para modificar comportamento. Máximo 5 arquivos.",

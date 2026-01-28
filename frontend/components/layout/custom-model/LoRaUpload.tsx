@@ -45,7 +45,7 @@ export const LoRaUpload: React.FC<LoRaUploadProps> = ({ files, onAdd, onRemove }
             className="
           text-xs 
           font-semibold 
-          dark-text-primary
+          text-white
           uppercase 
           tracking-widest"
           >
@@ -54,33 +54,32 @@ export const LoRaUpload: React.FC<LoRaUploadProps> = ({ files, onAdd, onRemove }
         </div>
         <p
           className="
-        text-xs 
-        dark-text-primary 
-        mb-4"
-        >
+            text-xs 
+            text-white
+            mb-4"
+            >
           {t('loraAdjust', { returnObjects: false })}
         </p>
 
         {files.length < 5 && (
           <label
             className="
-          flex 
-          items-center 
-          justify-center 
-          gap-2 
-          px-4 
-          py-2.5 
-          bg-neutral-900 
-          dark-text-primary 
-          rounded-md 
-          font-medium 
-          text-sm 
-          cursor-pointer 
-          hover:bg-neutral-800 
-          transition-colors 
-          border 
-          border-neutral-900"
-          >
+              flex 
+              items-center 
+              justify-center 
+              gap-2 
+              px-4 
+              py-2.5 
+              bg-black
+              text-white
+              rounded-md 
+              font-medium 
+              text-sm 
+              cursor-pointer 
+              transition-colors 
+              border 
+              border-neutral-900"
+              >
             <Upload size={14} />
             Upload LoRa
             <input
